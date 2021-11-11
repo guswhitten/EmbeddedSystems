@@ -19,3 +19,7 @@ __interrupt void WDT(void)
      P1OUT = ToggleLeds;
     }
 
+
+//result -->   https://youtu.be/cwIxpn7dnvQ
+
+
