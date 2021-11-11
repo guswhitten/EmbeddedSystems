@@ -1,6 +1,6 @@
 # EmbeddedSystems
 
-This repository is dedicated to code files written and employed for Embedded Systems.
+This repository is dedicated to code files written and used in Embedded Systems.
 
 The integer at the start of the name of each file indicates the lab # that file belongs to.
 
