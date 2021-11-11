@@ -6,7 +6,7 @@ TACCR0 is chosen to select period       (TACCR0 = F * T / D - 1)
 */ 
 #include "msp430G2553.h"
 
-void two(void)
+void main(void)
 {
     WDTCTL = WDTPW + WDTHOLD;               // Stop WDT
      P1DIR |= 0x40;                         // P1.6 pin set to make red LED output
