@@ -1,3 +1,9 @@
+/*
+This code was adapted from: drselim MSP430 & Multiple ADC on YouTube
+https://youtu.be/Ev871bhGFt0
+*/
+
+
 #include <msp430.h> 
 #include <stdlib.h>
 #include <stdio.h>
