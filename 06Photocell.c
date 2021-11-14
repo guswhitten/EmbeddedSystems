@@ -46,7 +46,7 @@ void main(void)
 }
 // Configure ADC Temperature
 void ConfigureAdc_temp(){
-
+//change to CONSEQ3 to read sequenvce of chsnnels 
      ADC10CTL1 = INCH_4 + ADC10DIV_0 + CONSEQ_2;            //change INCH_10 to INCH_4 to switch from MSP's internal temp as input pin to p1.4 as input pin
      ADC10CTL0 = SREF_1 | ADC10SHT_3 | REFON | ADC10ON ;//| ADC10IE; //Vref+, Vss, 64 ATD clocks per sample, internal references, turn ADCON
      __delay_cycles(5);                                 //wait for adc Ref to settle
