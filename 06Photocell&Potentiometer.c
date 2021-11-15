@@ -27,14 +27,14 @@ void main(void)
     DCOCTL = CALDCO_1MHZ;
     P1SEL = BIT1|BIT2;
     P1SEL2 = BIT1|BIT2;
-    UCA0CTL1 |= UCSWRST+UCSSEL_2;
+    UCA0CTL1 |= UCSWRST+UCSSEL_2;                                           //pause operation while configuring, choose SMCLK
 
-    UCA0BR0 = 52;
-    UCA0BR1 = 0;
-    UCA0MCTL = UCBRS_0;
-    UCA0CTL1 &= ~UCSWRST;
+    UCA0BR0 = 52;                                                           //generate 19200 baud rate
+    UCA0BR1 = 0;                                                            // "   "     "     "     "
+    UCA0MCTL = UCBRS_0;                                                     // second modulation stage select is 1
+    UCA0CTL1 &= ~UCSWRST;                                                   // clear SW reset, ready for operation
 
-    ADC10CTL1 = INCH_7 + ADC10DIV_0 + CONSEQ_3 + SHS_0;
+    ADC10CTL1 = INCH_7 + ADC10DIV_0 + CONSEQ_3 + SHS_0;             
     ADC10CTL0 = SREF_0 + ADC10SHT_2 + MSC + ADC10ON; //ADC10IE
     ADC10AE0 = BIT7 + BIT6 + BIT5 + BIT4 + BIT3 + BIT0;
     ADC10DTC1 = 8;
