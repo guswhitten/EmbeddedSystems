@@ -6,7 +6,6 @@ volatile long sample[100];
 int temp = 0;
 
 void ConfigureAdc_temp();
-
 void uart_init(void);
 void ConfigClocks(void);
 void strreverse(char* begin, char* end);
@@ -15,21 +14,17 @@ void port_init();
 
 void main(void)
 {
-    WDTCTL = WDTPW + WDTHOLD; // Stop watchdog timer
-
-    port_init();
-
-    ConfigClocks();
-    uart_init();
-
-    _delay_cycles(5);                // Wait for ADC Ref to settle
-
+    WDTCTL = WDTPW + WDTHOLD;                       // Stop watchdog timer
+    port_init();                                    //initialize ports
+    ConfigClocks();                                 //configure clocks
+    uart_init();                                    //initialize UART
+    _delay_cycles(5);                               //delay 5 us
     while(1){
-                ConfigureAdc_temp();
-                ADC10CTL0 |= ENC + ADC10SC +MSC;       // Converter Enable, Sampling/conversion start
+                ConfigureAdc_temp();                //call ADC configuartion function
+                ADC10CTL0 |= ENC + ADC10SC +MSC;       // ADC Enable, Sampling/conversion start
                 while((ADC10CTL0 & ADC10IFG) == 0);    // check the Flag, while its low just wait
                 P1OUT |= BIT6;                         // green LED on
-                _delay_cycles(2000000);               // delay for about 1 second so LED doesn't flash too fast
+                _delay_cycles(2000000);                // delay 2 seconds
                 tempRaw = ADC10MEM;                    // read the converted data into a variable
                 P1OUT &= ~BIT6;                        // green LED off
                 ADC10CTL0 &= ~ADC10IFG;                // clear the flag
@@ -40,7 +35,6 @@ void main(void)
                                   {
                                       while((IFG2 & UCA0TXIFG)==0);                  //Wait Unitl the UART transmitter is ready
                                       UCA0TXBUF = result[acount++] ;                   //Transmit the received data.
-
                                   }
     }
 }
