@@ -21,9 +21,11 @@ The integer at the start of the name of each file indicates the lab # that file 
 
     -06Photocell.c
         This code captures the sensor analog data from a PCB-mounted photoresistor
-        Displays the live data to the Terminal, or optionally, a graph.
+        Then configures the MSP's Analog-to-Digital Conversion (ADC) module to convert to digital data.
+        Displays the digital data live to the Terminal, or a graph through UART
     
     -06Photocell&Potentiometer.c
         This code captures the sensor analog data from both a PCB-mounted photoresistor & a potentiometer
-        Displays the live data to the Terminal, or optionally, a graph.
+        Then configures the MSP's Analog-to-Digital Conversion (ADC) module to convert both to digital data.
+        Displays the digital data live to the Terminal or a graph through UART
     
