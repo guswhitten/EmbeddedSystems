@@ -16,4 +16,7 @@ The integer at the start of the name of each file indicates the lab # that file 
         PWM controls LED brightness with 10% duty cycle and 500ms period
         
     -05hardwarePWM.c
-        
+        Configures Timer A module to generate a PWM using MSP's hardware.
+        Uses MSP's internal pull-up resistor connected in parallel to Button (P1.3)
+
+    -06
