@@ -12,6 +12,8 @@ The integer at the start of the name of each file indicates the lab # that file 
         Every time the interrupt occurs, the red and green LED toggle.
     
     -05softwarePWM.c
-        Turns off WDT since this program uses timer A module (TA0xxxx)
-        in order to access MSP430 "up mode"
-        Timer counts til it reaches 
+        Configures the MSP430's Timer A module to generate a PWM
+        PWM controls LED brightness with 10% duty cycle and 500ms period
+        
+    -05hardwarePWM.c
+        
