@@ -19,4 +19,10 @@ The integer at the start of the name of each file indicates the lab # that file 
         Configures Timer A module to generate a PWM using MSP's hardware.
         Uses MSP's internal pull-up resistor connected in parallel to Button (P1.3)
 
-    -06
+    -06Photocell.c
+        
+    
+    -06Photocell&Potentiometer.c
+        
+    
+    
