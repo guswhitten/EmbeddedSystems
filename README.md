@@ -20,9 +20,10 @@ The integer at the start of the name of each file indicates the lab # that file 
         Uses MSP's internal pull-up resistor connected in parallel to Button (P1.3)
 
     -06Photocell.c
-        
+        This code captures the sensor analog data from a PCB-mounted photoresistor
+        Displays the live data to the Terminal, or optionally, a graph.
     
     -06Photocell&Potentiometer.c
-        
-    
+        This code captures the sensor analog data from both a PCB-mounted photoresistor & a potentiometer
+        Displays the live data to the Terminal, or optionally, a graph.
     
