@@ -30,5 +30,9 @@ The integer at the start of the name of each file indicates the lab # that file 
         Displays the digital data live to the Terminal or a graph through UART
         
     -07ThingSpeak.cs
+        Creates Windows Form application which produces a Graphical User Interface (GUI) to manage serial transmission
+        Reads data serially from port 1 (COM6) at 19,200 bauds/s
+        Expects to get data from two sensors and displays them in individual textbox on the GUI
+        Transmits the data to ThingSpeak channel, which displays the data visually
         
     
