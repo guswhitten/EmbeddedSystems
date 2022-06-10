@@ -1,4 +1,4 @@
-# EmbeddedSystems
+# Embedded Systems
 This repository is dedicated to C programs that are all usable in Code Composer Studio with a TI-MSP430G2553 microcontroller
 
 ## Textbook reference (PDF Drive):
@@ -10,6 +10,7 @@ TI-MSP430G2553: https://www.ti.com/product/MSP430G2553
 ## Software / IDE:
 Code Composer Studio: https://software-dl.ti.com/ccs/esd/documents/ccs_downloads.html
 
+## File Descriptions:
 The integer at the start of the name of each file indicates the lab # that file belongs to.
 
     -05WDT.c 
