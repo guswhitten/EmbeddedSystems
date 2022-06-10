@@ -1,7 +1,7 @@
 # EmbeddedSystems
 This repository is dedicated to C programs that are all usable in Code Composer Studio with a TI-MSP430G2553 microcontroller
 
-## Textbook reference:
+## Textbook reference (PDF Drive):
 Programmable Microcontrollers with Applications (Unsalan, Gurhan) https://www.pdfdrive.com/deniz-programmable-microcontrollers-with-applications-msp430-launchpad-with-ccs-and-grace-e196719615.html
 
 ## Microcontroller:
